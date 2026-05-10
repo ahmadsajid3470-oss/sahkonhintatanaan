@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitä on pörssisähkö?</title>
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #333333;
+            --heading-color: #111111;
+            --accent-color: #2563eb;
+            --border-color: #f0f0f0;
+            --footer-bg: #fafafa;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        header {
+            border-bottom: 1px solid var(--border-color);
+            padding: 3rem 1.5rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--heading-color);
+            letter-spacing: -0.02em;
+        }
+
+        main {
+            flex: 1;
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 4rem 1.5rem;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: var(--heading-color);
+            margin-top: 3rem;
+            margin-bottom: 1.2rem;
+            letter-spacing: -0.01em;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.125rem;
+        }
+
+        ul {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.75rem;
+            font-size: 1.125rem;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s ease;
+        }
+
+        a:hover {
+            border-bottom: 1px solid var(--accent-color);
+        }
+
+        .highlight-box {
+            background-color: #f8fafc;
+            border-left: 4px solid var(--accent-color);
+            padding: 2rem;
+            margin: 3rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .highlight-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        footer {
+            border-top: 1px solid var(--border-color);
+            background-color: var(--footer-bg);
+            padding: 2.5rem 1.5rem;
+            text-align: center;
+            font-size: 0.95rem;
+            color: #666666;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mitä on pörssisähkö?</h1>
+    </header>
+
+    <main>
+        <article>
+            <p>Pörssisähkö on sähkösopimustyyppi, joka on kasvattanut merkittävästi suosiotaan suomalaisten kotitalouksien ja yritysten keskuudessa. Toisin kuin perinteisissä kiinteähintaisissa sopimuksissa, joissa sähkön kilowattituntihinta (snt/kWh) pysyy muuttumattomana kuukausien tai jopa vuosien ajan, pörssisähkön hinta elää jatkuvasti sähkömarkkinoiden dynaamisten muutosten mukana. Mutta miten tämä hinnoittelumekanismi todellisuudessa toimii, ja kenelle tällainen sopimus sopii parhaiten?</p>
+
+            <h2>Miten pörssisähkön hinta muodostuu?</h2>
+            <p>Pörssisähkön hinta perustuu pohjoismaisen sähköpörssin, Nord Poolin, määrittämiin tukkumarkkinahintoihin (niin sanottuun spot-hintaan). Sähkön hinta vaihtelee tunneittain, ja seuraavan vuorokauden tuntihinnat lyödään lukkoon aina edellisenä päivänä noin kello 14.00–15.00 Suomen aikaa. Tämä järjestelmä takaa sen, että kuluttajana tiedät aina ennakkoon huomisen sähkönhinnat tunti tunnilta.</p>
+            <p>Hinnanmuodostuksen taustalla vaikuttaa klassinen kysynnän ja tarjonnan laki. Kun sähköä tuotetaan paljon ja edullisesti – esimerkiksi tuulisina päivinä tai keväisten tulvavesien aikaan, jolloin vesi- ja tuulivoimaa on runsaasti tarjolla – sähkön hinta painuu alas, joskus jopa nollaan tai negatiiviseksi. Vastaavasti tyyninä, pilvisinä ja kireinä talvipäivinä, jolloin sähkön kulutus ja lämmityksen tarve on huipussaan, hinnat voivat nousta hyvinkin korkeiksi, kun kalliimpia tuotantomuotoja joudutaan käynnistämään vastaamaan kysyntään.</p>
+
+            <h2>Mistä pörssisähkölasku todellisuudessa koostuu?</h2>
+            <p>Kun solmit pörssisähkösopimuksen, on tärkeää ymmärtää, ettei sähköpörssin ilmoittama spot-hinta ole suoraan se summa, jonka maksat. Asiakkaan maksama lopullinen sähköenergian hinta koostuu kolmesta pääkomponentista:</p>
+            <ul>
+                <li><strong>Nord Poolin spot-hinta:</strong> Sähköpörssissä määräytyvä varsinainen sähköenergian raaka tuntihinta.</li>
+                <li><strong>Sähköyhtiön marginaali:</strong> Sähkönmyyjän perimä välityspalkkio (yleensä muutamia sadasosia senttejä per kilowattitunti) sekä mahdollinen kiinteä kuukausittainen perusmaksu, jolla yhtiö kattaa hallinnolliset kulunsa.</li>
+                <li><strong>Verot:</strong> Lakisääteinen arvonlisävero (tyypillisesti 24 %) lisätään spot-hinnan ja marginaalin päälle.</li>
+            </ul>
+            <p>Huomioithan, että sähköenergian maksamisen lisäksi kuluttaja maksaa aina erikseen sähkön siirrosta paikalliselle verkkoyhtiölle sekä sähköveroa. Sähkön siirtoa ei Suomessa voi kilpailuttaa.</p>
+
+            <div class="highlight-box">
+                <p><strong>Seuraa hintoja ja optimoi kulutuksesi</strong></p>
+                <p>Aktiivinen hintojen seuranta on avain pörssisähköstä hyötymiseen. Voit helposti tarkistaa mikä <a href="https://sahkotanaan.fi">pörssisähkön hinta tänään</a> on, ja ajoittaa kodinkoneiden käytön tai lämmityksen vuorokauden edullisimmille tunneille.</p>
+            </div>
+
+            <h2>Pörssisähkön edut ja riskit</h2>
+            <p>Pörssisähkön merkittävin etu on mahdollisuus vaikuttaa suoraan omaan sähkölaskuun. Koska hintatiedot ovat avoimesti saatavilla etukäteen, voit ajoittaa paljon energiaa vaativat toimet – kuten pyykinpesun, sähköauton lataamisen, lattialämmityksen varaamisen tai saunomisen – vuorokauden edullisimmille yötunneille tai viikonlopuille. Tämä niin kutsuttu kulutusjousto ei ainoastaan säästä lompakkoa, vaan se on myös ekologista, sillä se auttaa tasaamaan valtakunnallisen sähköverkon kuormitushuippuja.</p>
+            <p>Toisaalta pörssisähkö sisältää riskejä, jotka liittyvät hintojen voimakkaaseen ja toisinaan äkilliseen heilahteluun. Pitkät ja kylmät pakkasjaksot, geopoliittiset häiriöt tai merkittävät vikatilanteet suurissa voimalaitoksissa voivat nostaa sähkön hintaa nopeasti. Pörssisähkö vaatiikin käyttäjältään tiettyä riskinsietokykyä sekä valmiutta mukauttaa omia rutiinejaan markkinatilanteen mukaan.</p>
+
+            <h2>Kenelle pörssisähkö sopii?</h2>
+            <p>Pörssisähkö on erinomainen valinta kotitalouksille, joilla on joustovaraa arjessaan. Erityisesti sähkölämmitteisissä omakotitaloissa ja sähköautoa lataavissa talouksissa rahalliset hyödyt voivat olla huomattavia, kun kulutusta pystytään siirtämään automaation tai älykotijärjestelmien avulla halvoille tunneille. Pörssisähkö on pitkällä aikavälillä usein osoittautunut keskimäärin edullisimmaksi sopimustyypiksi, mikä tekee siitä houkuttelevan vaihtoehdon myös vähän sähköä kuluttaville kerrostaloasujille.</p>
+            <p>Yhteenvetona voidaan todeta, että pörssisähkö on markkinaehtoinen, läpinäkyvä ja joustava tapa ostaa sähköä. Se palkitsee tietoisen kuluttajan ja tuo sähkömarkkinoiden mekanismit suoraan kotiin kannustaen fiksumpaan energiankäyttöön.</p>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sähkömarkkinatietoa. Tämä sivu on luotu tarjoamaan yleishyödyllistä tietoa pörssisähkön toiminnasta.</p>
+    </footer>
+
+</body>
+</html>
